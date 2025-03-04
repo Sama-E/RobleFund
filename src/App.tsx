@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import Navbar from "./components/Navbar"
 import { SelectedPage } from "./types/types";
+// import Footer from "./sections/footer";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>
@@ -28,6 +29,8 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
+
+      {/* <Footer /> */}
     </div>
   )
 }
