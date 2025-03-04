@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 
-import Navbar from "./components/Navbar"
 import { SelectedPage } from "./types/types";
+import Navbar from "./components/Navbar"
+import Home from "./sections/home";
+import About from "./sections/about";
 // import Footer from "./sections/footer";
 
 function App() {
@@ -23,13 +25,14 @@ function App() {
     }, []);
 
   return (
-    <div className="app bg-gray-20">
+    <div className="app bg-white">
       <Navbar 
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-
+      <Home setSelectedPage={setSelectedPage}/>
+      <About setSelectedPage={setSelectedPage}/>
       {/* <Footer /> */}
     </div>
   )

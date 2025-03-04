@@ -1,16 +1,16 @@
 export enum SelectedPage {
   Home = "home",
-  Project = "project",
+  Mission = "mroject",
   Impact = "impact",
   ContactUs = "contactus",
   Donate = "donate",
 }
 
-// export interface ProjectType {
-//   icon: JSX.Element;
-//   title: string;
-//   description: string;
-// }
+export interface MissionType {
+  icon: JSX.Element;
+  title: string;
+  description: string;
+}
 
 export interface ClassType {
   name: string;
