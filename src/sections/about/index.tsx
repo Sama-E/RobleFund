@@ -82,7 +82,7 @@ const About = ({ setSelectedPage }: Props) => {
 
         <section id="about" className="mx-auto m-h-full w-3/4 py-2">
           <motion.div 
-            className="mt-5 items-center justify-between gap-8 md:flex"
+            className="mt-2 items-center justify-between gap-2 md:flex"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -99,7 +99,7 @@ const About = ({ setSelectedPage }: Props) => {
             ))}
           </motion.div>
         </section>
-    
+
     </>
   )
 }

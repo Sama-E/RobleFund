@@ -4,6 +4,7 @@ import { SelectedPage } from "./types/types";
 import Navbar from "./components/Navbar"
 import Home from "./sections/home";
 import About from "./sections/about";
+import Map from "./sections/map";
 // import Footer from "./sections/footer";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       />
       <Home setSelectedPage={setSelectedPage}/>
       <About setSelectedPage={setSelectedPage}/>
+      <Map setSelectedPage={setSelectedPage} />
       {/* <Footer /> */}
     </div>
   )
