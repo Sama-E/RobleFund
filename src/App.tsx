@@ -6,7 +6,8 @@ import Home from "./sections/home";
 import Wells from "./sections/wells";
 import Works from "./sections/work";
 import Mission from "./sections/mission";
-// import Footer from "./sections/footer";
+import Contact from "./sections/contact";
+import Footer from "./sections/footer";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>
@@ -37,7 +38,8 @@ function App() {
       <Mission setSelectedPage={setSelectedPage}/>
       <Wells setSelectedPage={setSelectedPage} />
       <Works setSelectedPage={setSelectedPage} />
-      {/* <Footer /> */}
+      <Contact setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   )
 }

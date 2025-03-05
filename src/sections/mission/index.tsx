@@ -7,6 +7,7 @@ import { MdOutlineWaterDrop } from "react-icons/md";
 import { MissionType, SelectedPage } from '@/types/types';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import Missions from './Missions';
+import HText from '@/components/HText';
 
 const missions: Array<MissionType> = [
   {
@@ -45,7 +46,7 @@ const Mission = ({ setSelectedPage }: Props) => {
 
   return (
     <>     
-      <section id="mission" className="mt-32 mx-auto m-h-full w-3/4 py-2">
+      <section id="mission" className="mx-auto w-5/6 pt-24 pb-32">
         <motion.div 
           className="mt-5 items-center justify-around gap-8 md:flex"
           initial="hidden"
@@ -55,7 +56,9 @@ const Mission = ({ setSelectedPage }: Props) => {
         >
 
           <motion.div className="px-5 py-16">
-            <h1 className="text-lg">Our Mission: </h1>
+            <HText>
+              <span className="text-primary-500">Our </span>Mission:
+            </HText>
             <p className="my-3">
 
             Our mission at the Roble Foundation is to address water scarcity in the Sanag Region by providing sustainable solutions that empower communities, enhance health, and support long-term development. We are committed to creating a future where every individual has access to clean, safe water and the tools to thrive.
@@ -69,11 +72,11 @@ const Mission = ({ setSelectedPage }: Props) => {
             <hr className="my-6 h-0.5 border-t-0 bg-gray-400" />
           )}
 
-          <motion.div 
-            className="px-5 py-16">
-            <h3 className="text-lg">Our Vision</h3>
+          <motion.div className="px-5 py-16">
+            <HText>
+              <span className="text-primary-500">Our </span>Vision:
+            </HText>
             <p className="my-3">
-
               We envision a future where no one in the Sanag Region suffers from a lack of clean and safe water. Our goal is to eliminate the daily struggles caused by water scarcity through sustainable water infrastructure and community empowerment. With reliable access to clean water, we aim to improve health outcomes, enhance educational opportunities, boost agricultural productivity, and reduce poverty. By fostering social and economic growth, we strive to create thriving, self-reliant communities and a future marked by resilience, dignity, and prosperity for all.
             </p>
           </motion.div>

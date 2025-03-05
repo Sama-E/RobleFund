@@ -9,11 +9,6 @@ import image1 from "@/assets/1 - Ali Shire Omar.jpg";
 import image2 from "@/assets/2 - Saed Abdi Duale.jpg";
 import image3 from "@/assets/3 - Maryam Hussein.jpg";
 import image4 from "@/assets/4 - Comunidad de Sincaro.jpg";
-import image5 from "@/assets/6 - Comunidad de Sincaro.jpg";
-import image7 from "@/assets/7 - Somaliland.jpg";
-import image8 from "@/assets/8 - Sincaro town.jpg";
-import image9 from "@/assets/9 - Fatouma.jpg";
-import image10 from "@/assets/10 - Cabdi Mahamoud.jpg";
 
 const works: Array<WorkType> = [
   {
@@ -36,11 +31,6 @@ const works: Array<WorkType> = [
     description: "Water sustains health, drives development, and nurtures the environment; addressing scarcity fosters thriving communities, improved health, and opportunities.",
     image: image4,
   },
-  {
-    name: "Economic Impact",
-    description: "Water scarcity limits economic opportunities, forces long walks for unreliable sources, hinders education, employment, agriculture, and income generation.",
-    image: image5,
-  },
 ]
 
 type Props = {
@@ -51,14 +41,14 @@ const Works = ({ setSelectedPage }: Props) => {
   return (
     <section
       id="works"
-      className="w-full px-20"
+      className="mx-auto w-5/6 pt-24 pb-32"
     >
 
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Works)}
       >
         <motion.div
-          className="w-4/5 p-10"
+          className="w-4/5"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -68,7 +58,7 @@ const Works = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
           }}  
         >
-          <div className="w-4/5">
+          <div className="w-4/5 mt-10">
             <HText>Our Work: Why Water Matters
             </HText>
             <ul>

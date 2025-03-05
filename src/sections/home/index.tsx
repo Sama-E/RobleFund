@@ -5,6 +5,7 @@ import { SelectedPage } from "@/types/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/components/Buttons/ActionButton";
 import Drought from "@/assets/5 - Somaliland.jpg"
+import Mission from "../mission";
 
 // import OxFam from "@/assets/OxfamGreen.png";
 // import STC from "@/assets/SaveTheChildren.png";
@@ -18,14 +19,14 @@ const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
     return ( 
-      <section id="home" className="mt-20">
+      <section id="home" className="mx-auto pt-24 pb-32">
         {/* IMAGE AND MAIN HEADER */}
         <motion.div
           className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
           onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
         >
           {/* MAIN HEADER */}
-          <div className="z-10 pt-20 mt-32 mb-16 md:basis-3/5">
+          <div className="z-10 pt-20 mt-32 md:basis-3/5">
             {/* HEADINGS */}
             <motion.div
               className="md:-mt-20"
@@ -85,23 +86,6 @@ const Home = ({ setSelectedPage }: Props) => {
             <img alt="drought" src={Drought} className="rounded-3xl shadow-2xl" />
           </div>
         </motion.div>
-
-        {/* SPONSORS */}
-        {/*         
-        {isAboveMediumScreens && (
-        <div className="h-[150px] w-full bg-primary-100 py-10">
-          <div className="mx-auto w-5/6">
-          <div className="flex w-5/5 items-center justify-between gap-8">
-              <h3 className="text-lg font-extrabold text-blue underline bg-white flex text-center rounded p-2">The Roble Foundation</h3>
-              <img className="h-[50px] w-[120px] rounded" alt="OxFam" src={OxFam} />
-              <img className="h-[70px] w-[110px] rounded" alt="SaveTheChildren" src={STC} />
-              <img className="h-[70px] w-[130px] rounded" alt="ADB" src={ADB} />
-          </div>
-          </div>
-        </div>
-      )} 
-      */}
-
     </section>
     );
 };
