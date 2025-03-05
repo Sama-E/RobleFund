@@ -23,11 +23,6 @@ module.exports = {
         montserrat: ["Montserrat", "sans-serif"],
       },
       content: {
-        // wishtext: "url('./assets/WishText.png')",
-        // abstractwaves: "url('./assets/AbstractWaves.png')",
-        // sparkles: "url('./assets/Sparkles.png')",
-        // circles: "url('./assets/Circles.png')",
-        // heroImage: "url('./assets/AfricaDrought.png')",
       },
     },
     screens: {
