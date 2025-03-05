@@ -39,17 +39,17 @@ return (
                   setSelectedPage={setSelectedPage}
               />
               <Link 
-                  page="About Us"
+                  page="Mission"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage} 
               />
               <Link 
-                  page="Our Work"
+                  page="Wells"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
               />
               <Link 
-                  page="Drilling Wells" 
+                  page="Works" 
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
               />

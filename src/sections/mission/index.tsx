@@ -6,7 +6,7 @@ import { MdOutlineWaterDrop } from "react-icons/md";
 
 import { MissionType, SelectedPage } from '@/types/types';
 import useMediaQuery from '@/hooks/useMediaQuery';
-import Mission from './Mission';
+import Missions from './Missions';
 
 const missions: Array<MissionType> = [
   {
@@ -40,18 +40,18 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Vision = ({ setSelectedPage }: Props) => {
+const Mission = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return (
     <>     
-      <section id="vision" className=" mt-10 mx-auto m-h-full w-3/4 py-2">
+      <section id="mission" className="mt-32 mx-auto m-h-full w-3/4 py-2">
         <motion.div 
-            className="mt-5 items-center justify-around gap-8 md:flex"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            // variants={container}
+          className="mt-5 items-center justify-around gap-8 md:flex"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          // variants={container}
         >
 
           <motion.div className="px-5 py-16">
@@ -63,7 +63,7 @@ const Vision = ({ setSelectedPage }: Props) => {
           </motion.div>
         
           {isAboveMediumScreens ? (
-          <div className="inline-block h-[325px] min-h-[1em] w-0.5 self-stretch bg-gray-400"></div>
+          <div className="inline-block h-[350px] min-h-[1em] w-0.5 self-stretch bg-gray-400"></div>
           ) :
           (
             <hr className="my-6 h-0.5 border-t-0 bg-gray-400" />
@@ -89,7 +89,7 @@ const Vision = ({ setSelectedPage }: Props) => {
             // variants={container}
           >
             {missions.map((project: MissionType) => (
-              <Mission 
+              <Missions 
                 key={project.title}
                 icon={project.icon}
                 title={project.title}
@@ -104,4 +104,4 @@ const Vision = ({ setSelectedPage }: Props) => {
   )
 }
 
-export default Vision
+export default Mission

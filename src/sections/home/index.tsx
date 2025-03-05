@@ -18,14 +18,14 @@ const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
     return ( 
-      <section className="mt-20">
+      <section id="home" className="mt-20">
         {/* IMAGE AND MAIN HEADER */}
         <motion.div
           className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
           onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
         >
           {/* MAIN HEADER */}
-          <div className="z-10 mt-32 mb-16 md:basis-3/5">
+          <div className="z-10 pt-20 mt-32 mb-16 md:basis-3/5">
             {/* HEADINGS */}
             <motion.div
               className="md:-mt-20"

@@ -1,9 +1,8 @@
 export enum SelectedPage {
   Home = "home",
-  Vision = "vision",
-  Map="map",
-  Works = "works",
+  Mission = "mission",
   Wells = "wells",
+  Works = "works",
   ContactUs = "contactus",
   Donate = "donate",
 }
