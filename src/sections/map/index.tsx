@@ -55,11 +55,10 @@ const Map = ({ setSelectedPage }: Props) => {
       </HText>
       </div>
 
-      <div className="w-full px-12 items-center justify-center mt-10 gap-12 md:flex">
+      <div className="items-center justify-center mt-10">
         {/* GRAPHICS AND DESCRIPTION */}
           {/* GRAPHIC */}
-          <div className="flex basis-2/3 justify-center md:z-10
-            md:ml-40 md:mt-16 md:justify-items-end">
+          <div className="flex basis-2/3 justify-center px-5">
             <img 
                 className="rounded-3xl shadow-2xl"
                 alt="map"
@@ -69,7 +68,7 @@ const Map = ({ setSelectedPage }: Props) => {
 
           {/* LOCATIONS */}
           <div className="flex basis-1/3 mt-10">
-            <div className="grid grid-cols-2 gap-8">
+            <div className="grid grid-cols-2 gap-8 m-20 px-10">
             {locations.map((location: LocationType) => (
               <Location 
                 icon={location.icon}

@@ -3,8 +3,9 @@ import { useEffect, useState } from "react";
 import { SelectedPage } from "./types/types";
 import Navbar from "./components/Navbar"
 import Home from "./sections/home";
-import About from "./sections/about";
 import Map from "./sections/map";
+import Works from "./sections/work";
+import Vision from "./sections/vision";
 // import Footer from "./sections/footer";
 
 function App() {
@@ -33,8 +34,9 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <Home setSelectedPage={setSelectedPage}/>
-      <About setSelectedPage={setSelectedPage}/>
+      <Vision setSelectedPage={setSelectedPage}/>
       <Map setSelectedPage={setSelectedPage} />
+      <Works setSelectedPage={setSelectedPage} />
       {/* <Footer /> */}
     </div>
   )

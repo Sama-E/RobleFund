@@ -1,7 +1,8 @@
 export enum SelectedPage {
   Home = "home",
-  About = "about",
-  Work = "work",
+  Vision = "vision",
+  Map="map",
+  Works = "works",
   Wells = "wells",
   ContactUs = "contactus",
   Donate = "donate",
@@ -19,7 +20,7 @@ export interface LocationType {
   description: string;
 }
 
-export interface ClassType {
+export interface WorkType {
   name: string;
   description?: string;
   image: string;

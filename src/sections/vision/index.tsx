@@ -40,12 +40,12 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const About = ({ setSelectedPage }: Props) => {
+const Vision = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return (
     <>     
-      <section id="about" className=" mt-10 mx-auto m-h-full w-3/4 py-2">
+      <section id="vision" className=" mt-10 mx-auto m-h-full w-3/4 py-2">
         <motion.div 
             className="mt-5 items-center justify-around gap-8 md:flex"
             initial="hidden"
@@ -104,4 +104,4 @@ const About = ({ setSelectedPage }: Props) => {
   )
 }
 
-export default About
+export default Vision
