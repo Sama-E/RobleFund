@@ -8,13 +8,13 @@ export enum SelectedPage {
 }
 
 export interface MissionType {
-  icon: JSX.Element;
+  icon: Element;
   title: string;
   description: string;
 }
 
 export interface LocationType {
-  icon: JSX.Element;
+  icon: Element;
   title: string;
   description: string;
 }
