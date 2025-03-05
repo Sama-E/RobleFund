@@ -1,4 +1,4 @@
-import { JSX } from "react";
+// import { JSX } from "react";
 
 export enum SelectedPage {
   Home = "home",
@@ -10,13 +10,13 @@ export enum SelectedPage {
 }
 
 export interface MissionType {
-  icon: JSX.Element;
+  // icon: JSX.Element;
   title: string;
   description: string;
 }
 
 export interface LocationType {
-  icon: JSX.Element;
+  // icon: JSX.Element;
   title: string;
   description: string;
 }

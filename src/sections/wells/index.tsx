@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import { CiLocationOn } from "react-icons/ci";
+// import { CiLocationOn } from "react-icons/ci";
 
 import MapImg from "@/assets/SomalilandMap.png";
 import HText from '@/components/HText';
@@ -9,25 +9,25 @@ import Location from './Location';
 
 const locations: Array<MissionType> = [
   {
-      icon: <CiLocationOn className="h-5 w-5" />,
+      // icon: <CiLocationOn className="h-5 w-5" />,
       title: "Yufleh:",
       description:
           "With a population of 6,000, this is the largest village in the project, underscoring the urgent need for improved water resources to support its growing community."
   },
   {
-      icon: <CiLocationOn className="h-5 w-5" />,
+      // icon: <CiLocationOn className="h-5 w-5" />,
       title: "Dagaar:",
       description:
           "With 5,000 residents, this village is the second-largest in the initiative. It faces similar water challenges, though slightly smaller than the largest village. It’s 10 miles west of Erigavo."
   },
   {
-      icon: <CiLocationOn className="h-5 w-5" />,
+      // icon: <CiLocationOn className="h-5 w-5" />,
       title: "Marawade:",
       description:
           "This village, home to 4,000 residents, is one of the smaller yet equally important communities benefiting from the project. It lies 15 miles east of Erigavo."
   },
   {
-    icon: <CiLocationOn className="h-5 w-5" />,
+    // icon: <CiLocationOn className="h-5 w-5" />,
     title: "Hurgufato:",
     description:
         "With 4,000 residents, this village matches Marawade in size and need, highlighting the importance of equitable access to resources across all targeted villages. It’s 8 miles east of Erigavo."
@@ -85,7 +85,7 @@ const Wells = ({ setSelectedPage }: Props) => {
                 <div className="grid grid-cols-2 gap-8 px-5">
                 {locations.map((location: LocationType) => (
                   <Location 
-                    icon={location.icon}
+                    // icon={location.icon}
                     key={location.title}
                     title={location.title}
                     description={location.description}

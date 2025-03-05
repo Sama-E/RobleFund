@@ -10,20 +10,20 @@ const childVariant = {
 }
 
 type Props = {
-  icon: JSX.Element;
+  // icon: JSX.Element;
   title: string;
   description: string;
   setSelectedPage: (value: SelectedPage) => void;
 }
 
-const Location = ({ icon, title, description, setSelectedPage }: Props) => {
+const Location = ({ title, description, setSelectedPage }: Props) => {
   return (
     <motion.div 
       variants={childVariant}    
     >
       <div className="rounded-md border-2 border-gray-100 px-3 py-3">
         
-        <p><h4 className="font-bold">{icon} {title}</h4></p>
+        <p><h4 className="font-bold">{title}</h4></p>
         <p className="my-3">{description}</p>
         <AnchorLink
             className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"

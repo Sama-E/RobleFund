@@ -1,8 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import { MdOutlineHealthAndSafety } from "react-icons/md";
-import { HiOutlineUserGroup } from "react-icons/hi";
-import { MdOutlineWaterDrop } from "react-icons/md";
+// import { MdOutlineHealthAndSafety } from "react-icons/md";
+// import { HiOutlineUserGroup } from "react-icons/hi";
+// import { MdOutlineWaterDrop } from "react-icons/md";
 
 import { MissionType, SelectedPage } from '@/types/types';
 import useMediaQuery from '@/hooks/useMediaQuery';
@@ -11,19 +11,19 @@ import HText from '@/components/HText';
 
 const missions: Array<MissionType> = [
   {
-      icon: <MdOutlineWaterDrop className="h-6 w-6" />,
+      // icon: <MdOutlineWaterDrop className="h-6 w-6" />,
       title: "Support Access to Water",
       description:
           "We develop sustainable water infrastructure, including boreholes, distribution systems, and sanitation facilities, to ensure reliable access, promote health, and support long-term community growth."
   },
   {
-      icon: <HiOutlineUserGroup className="h-6 w-6" />,
+      // icon: <HiOutlineUserGroup className="h-6 w-6" />,
       title: "Empower Communities",
       description:
           "Our mission empowers communities with knowledge and tools to manage water, boost agriculture, and achieve self-reliance through training, leadership, and sustainable, community-driven initiatives."
   },
   {
-      icon: <MdOutlineHealthAndSafety className="h-6 w-6" />,
+      // icon: <MdOutlineHealthAndSafety className="h-6 w-6" />,
       title: "Promote Health and Sanitation",
       description:
           "Access to clean water prevents waterborne diseases like diarrhea, typhoid, and malaria. We advocate for water, sanitation, and hygiene solutions to improve health and reduce illnesses."
@@ -94,7 +94,7 @@ const Mission = ({ setSelectedPage }: Props) => {
             {missions.map((project: MissionType) => (
               <Missions 
                 key={project.title}
-                icon={project.icon}
+                // icon={project.icon}
                 title={project.title}
                 description={project.description}
                 setSelectedPage={setSelectedPage}
