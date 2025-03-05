@@ -47,7 +47,7 @@ type Props = {
 
 const Wells = ({ setSelectedPage }: Props) => {
   return (
-    <section id="wells" className="flex-row items-center mt-20 mb-20">
+    <section id="wells" className="flex-row items-center pt-24 pb-32">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Wells)}
       >
@@ -82,7 +82,7 @@ const Wells = ({ setSelectedPage }: Props) => {
 
               {/* LOCATIONS */}
               <div className="flex basis-1/3 mt-10">
-                <div className="grid grid-cols-2 gap-8 m-20 px-10">
+                <div className="grid grid-cols-2 gap-8 px-5">
                 {locations.map((location: LocationType) => (
                   <Location 
                     icon={location.icon}

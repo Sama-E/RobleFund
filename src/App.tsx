@@ -8,6 +8,7 @@ import Works from "./sections/work";
 import Mission from "./sections/mission";
 import Contact from "./sections/contact";
 import Footer from "./sections/footer";
+import Donate from "./sections/donate";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>
@@ -38,6 +39,7 @@ function App() {
       <Mission setSelectedPage={setSelectedPage}/>
       <Wells setSelectedPage={setSelectedPage} />
       <Works setSelectedPage={setSelectedPage} />
+      <Donate setSelectedPage={setSelectedPage} />
       <Contact setSelectedPage={setSelectedPage} />
       <Footer />
     </div>

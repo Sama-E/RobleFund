@@ -5,11 +5,7 @@ import { SelectedPage } from "@/types/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/components/Buttons/ActionButton";
 import Drought from "@/assets/5 - Somaliland.jpg"
-import Mission from "../mission";
 
-// import OxFam from "@/assets/OxfamGreen.png";
-// import STC from "@/assets/SaveTheChildren.png";
-// import ADB from "@/assets/ADB.png";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;

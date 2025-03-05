@@ -48,7 +48,7 @@ const Works = ({ setSelectedPage }: Props) => {
         onViewportEnter={() => setSelectedPage(SelectedPage.Works)}
       >
         <motion.div
-          className="w-4/5"
+          className="w-4/5 mt-10"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -58,7 +58,7 @@ const Works = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
           }}  
         >
-          <div className="w-4/5 mt-10">
+          <div className="w-4/5">
             <HText>Our Work: Why Water Matters
             </HText>
             <ul>
